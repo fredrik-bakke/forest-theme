@@ -146,6 +146,14 @@
     </li>
   </xsl:template>
 
+  <xsl:template match="f:meta[@name='license']">
+    <li class="meta-item">
+      <a class="link local" href="{concat(/f:tree/@base-url, normalize-space(.))}">
+        <xsl:value-of select="normalize-space(.)" />
+      </a>
+    </li>
+  </xsl:template>
+
   <xsl:template match="f:meta[@name='slides']">
     <li class="meta-item">
       <a class="link external" href="{.}">
