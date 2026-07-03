@@ -14,6 +14,11 @@
         <link rel="stylesheet" href="{/f:tree/@base-url}katex.min.css" />
         <link rel="stylesheet" href="{/f:tree/@base-url}Agda.css" />
         <link rel="stylesheet" href="{/f:tree/@base-url}st-style.css" />
+        <link rel="icon" href="{/f:tree/@base-url}favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="{/f:tree/@base-url}favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="{/f:tree/@base-url}favicon-16x16.png" />
+        <link rel="icon" type="image/svg+xml" href="{/f:tree/@base-url}favicon.svg" />
+        <link rel="apple-touch-icon" href="{/f:tree/@base-url}apple-touch-icon.png" />
         <script type="text/javascript">
           <xsl:if test="/f:tree/f:frontmatter/f:source-path">
             <xsl:text>window.sourcePath = '</xsl:text>
@@ -185,7 +190,7 @@
   </xsl:template>
 
   <xsl:template match="f:mainmatter">
-     <xsl:apply-templates />
+    <xsl:apply-templates />
   </xsl:template>
 
   <xsl:template match="f:display-uri[../f:route]">
